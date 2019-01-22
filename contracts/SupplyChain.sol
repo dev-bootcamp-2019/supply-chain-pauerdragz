@@ -133,7 +133,6 @@ contract SupplyChain {
     emit LogShipped(sku);
   }
   
-
   /* Add 2 modifiers to check if the item is shipped already, and that the person calling this function
   is the buyer. Change the state of the item to received. Remember to call the event associated with this function!*/
   function receiveItem(uint sku) shipped(sku) verifyCaller(items[sku].buyer)
